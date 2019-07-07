@@ -65,12 +65,12 @@ const fi = (function() {
     last: function (array, n) {
       if(n){
         const subarray = []
-        for(let i= array.length - 1; i > array.length - 1 - n ; i--)
+        for(let i= array.length - 1; i >= array.length - n ; i--)
           subarray.push(array[i])
         return subarray
       }
       else {
-        return array[0]
+        return array[-1]
       }
     }
 
