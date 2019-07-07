@@ -50,6 +50,18 @@ const fi = (function() {
       return newCollection.length
     },
 
+    first: function (array, n) {
+      if(n){
+        const subarray = []
+        for(let i=0; i < n; i++)
+          subarray.push(array[i])
+        return subarray
+      }
+      else {
+        return array[0]
+      }
+    }
+
     functions: function() {
 
     },
