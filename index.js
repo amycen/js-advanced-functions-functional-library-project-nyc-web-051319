@@ -60,6 +60,18 @@ const fi = (function() {
       else {
         return array[0]
       }
+    },
+
+    last: function (array, n) {
+      if(n){
+        const subarray = []
+        for(let i= array.length - 1; i > array.length - 1 - n ; i--)
+          subarray.push(array[i])
+        return subarray
+      }
+      else {
+        return array[0]
+      }
     }
 
     functions: function() {
