@@ -46,8 +46,9 @@ const fi = (function() {
     },
 
     size: function (collection) {
-      return collection.length
-    }
+      const newCollection = collection instanceof Array ? collection : Object.values(collection)
+      return newCollection.length
+    },
 
     functions: function() {
 
